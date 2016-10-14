@@ -1,0 +1,6 @@
+<section class="list-wrapper">
+    <div (click)="onSelect(videoItem)" class="list-item" *ngFor="let videoItem of items">
+        <img [src]="videoItem.teaserUrl"/>
+        <span class="list-item-title">{{videoItem.title}}</span>
+    </div>
+</section>

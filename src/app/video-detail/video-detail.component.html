@@ -1,0 +1,18 @@
+<section class="detail-wrapper" *ngIf="asset">
+    <div class="detail-teaser">
+        <img [src]='asset.teaserUrl'/>
+    </div>
+    <div class="detail-content">
+        <h3>{{asset.title}}</h3>
+        <div>
+            <span>{{asset.genres}} | {{asset.year}} | {{asset.country}}</span>
+        </div>
+        <p>{{asset.description}}</p>
+        <div>
+            <span>Cast: {{asset.cast}}</span>
+        </div>
+        <div *ngIf="asset.director">
+            <span>Director(s): {{asset.director}}</span>
+        </div>
+    </div>
+</section>
